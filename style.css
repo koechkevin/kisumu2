@@ -1,0 +1,25 @@
+body {
+background-color: azure;
+
+}
+.form{
+
+margin-left: 35%;
+margin-right: 30%;
+
+border: 2px dotted black;  
+padding: 10px 10px 10px 10px;
+}
+button{
+background-color:blue;
+border-radius:50%;
+}
+ul li{
+display:inline;
+
+}
+nav{
+
+background-color:grey;
+font-size:30px
+}
