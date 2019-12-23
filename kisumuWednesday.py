@@ -13,11 +13,11 @@ class Signin(object):
 		password=input('Enter your password  ')
 		self.log(username,password)
 	def reg(self,firstname,lastname,username,password,email):
-		self.database.update({username:password})
+		self.database.update({username:[password,firstname,lastname,username,email]})
 		print('successful registration for '+username)
 	def log(self,username,password):
 		if username in self.database:
-			if password==self.database[username]:
+			if password==self.database[username][0]:
 				print('Welcome to our website')
 			else:
 				print('Invalid Credentials')
